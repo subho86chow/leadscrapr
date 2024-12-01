@@ -24,7 +24,7 @@ export const Features = () => {
   const rotatex = useTransform(scrollYProgress,[0,1],[15,0])
 
   return (
-    <section id="features"  className="relative w-full pb-10 overflow-x-clip bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <section id="features"  className="relative w-full pb-10 overflow-x-clip bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] select-none">
 
       <div className="py-4">
         <div className="">

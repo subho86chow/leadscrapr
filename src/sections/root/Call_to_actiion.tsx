@@ -17,7 +17,7 @@ export const Call_to_action = () => {
   const translateY = useTransform(scrollYProgress,[1,0],[-200,200])
 
     return (
-        <section ref={sectionRef} className="inset-0 -z-10 h-full w-full [background:radial-gradient(180%_180%_at_50%_0%,#eaeefe_30%,#183ec2_100%)]">
+        <section ref={sectionRef} className="select-none inset-0 -z-10 h-full w-full [background:radial-gradient(180%_180%_at_50%_0%,#eaeefe_30%,#183ec2_100%)]">
         <div className="p-5 sm:p-5 md:py-20 md:px-28">
         <div className="hidden lg:block absolute">
           <motion.img src={magnifyingGlass.src} alt="magnifyingGlass" className="md:w-[9rem] lg:w-[13rem] relative md:left-[65vw] md:top-[14vw] lg:left-[75vw] lg:top-[8vw]" style={{translateY,}}/>

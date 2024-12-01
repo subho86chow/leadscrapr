@@ -45,7 +45,7 @@ export const Navbar = () => {
   }, [pathname]);
 
   return (
-    <header id="home" className="sticky top-0 z-30">
+    <header id="home" className="sticky top-0 z-30 select-none">
       <div className="flex justify-center items-center py-2 sm:py-3 bg-black text-white text-xs sm:text-sm">
         <div className="inline-flex items-center gap-1">
           <p className="text-white/60 px-2 hidden md:block">

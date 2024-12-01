@@ -15,7 +15,7 @@ export const Hero = () => {
   const translateY = useTransform(scrollYProgress,[1,0],[0,100])
 
   return (
-    <section ref={sectionRef} className="inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(150%_150%_at_50%_10%,#eaeefe_40%,#183ec2_100%)]">
+    <section ref={sectionRef} className="inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(150%_150%_at_50%_10%,#eaeefe_40%,#183ec2_100%)] select-none">
       <div className=""></div>
       <div className="p-5 sm:p-5 md:py-20 md:px-28">
         <div className="mt-10 sm:mt-10 md:mt-30">

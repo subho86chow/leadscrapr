@@ -31,7 +31,7 @@ const QNAS = [
 
 export const Faqs = () => {
     return (
-        <section id="faqs">
+        <section id="faqs" className="select-none">
         <div className="p-5 sm:p-5 md:py-20 md:px-28">
           <div className="mt-10 sm:mt-10 md:mt-30">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl py-2 font-bold tracking-tighter text-center bg-gradient-to-b from-black to-blue-600 text-transparent bg-clip-text">

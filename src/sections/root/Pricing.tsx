@@ -41,7 +41,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:10px_10px]">
+    <section id="pricing" className="select-none bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:10px_10px]">
       <div className="p-5 sm:p-5 md:pt-20 md:px-28">
       <div className="mt-5 container">
             <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl py-2 font-bold tracking-tighter text-center bg-gradient-to-b from-black to-blue-600 text-transparent bg-clip-text">

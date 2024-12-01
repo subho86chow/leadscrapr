@@ -8,7 +8,7 @@ import { FaLinkedinIn,FaXTwitter,FaYoutube } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white select-none">
       <div className="mx-6 py-4 sm:py-4 md:pt-4 flex justify-between items-center">
         <div className="flex items-center">
           <Image src={Favicon} width={30} alt="footer logo"/>
