@@ -62,11 +62,10 @@ export const Features = () => {
         <div className="">
           <div className="mt-5 container">
             <h2 className="text-2xl sm:text-3xl md:text-6xl py-2 font-bold tracking-tighter text-center bg-gradient-to-b from-black to-blue-600 text-transparent bg-clip-text">
-              Features
+            All-in-One Solution for Lead Generation
             </h2>
             <p className="text-sm sm:text-sm md:text-xl font-bold text-center text-black/40 py-5 sm:py-5 md:py-5 px-5 sm:px-5 md:px-20">
-              Leadscraper is packed with tools to streamline your search for
-              qualified leads.
+            Leadscraper combines cutting-edge tools that help you find the right leads, analyze them instantly, and convert them into valuable opportunities.
             </p>
           </div>
         </div>

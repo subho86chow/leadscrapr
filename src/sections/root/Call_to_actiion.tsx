@@ -25,12 +25,11 @@ export const Call_to_action = () => {
         </div>
           <div className="mt-10 sm:mt-10 md:mt-30">
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl py-2 font-bold tracking-tighter text-center bg-gradient-to-b from-black to-blue-600 text-transparent bg-clip-text">
-              Get highly qualified leads
-              <br /> in just few clicks
+            Turn Clicks into Clients
+              <br /> Get Qualified Leads Effortlessly!
             </h1>
             <p className="text-sm sm:text-sm md:text-xl font-bold text-center text-black/40 py-5 sm:py-5 md:py-5 px-5 sm:px-5 md:px-20">
-              Say goodbye to tedious searches and hello to effortless growth with
-              Leadscraper.
+            Stop wasting time on manual lead generation, let Leadscraper power your growth effortlessly.
             </p>
             <div className="flex items-center justify-center">
               <button className="btn btn-primary gap-1 text-xs sm:text-xs md:text-base shadow-lg">

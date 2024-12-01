@@ -49,8 +49,7 @@ export const Pricing = () => {
             Free to try, affordable <br/> for your whole company
             </h2>
             <p className="text-sm sm:text-sm md:text-xl font-bold text-center text-black/40 py-5 px-5 sm:px-5 md:px-20">
-            Say goodbye to tedious searches and hello to effortless growth with
-            Leadscraper.
+            Get started with Leadscraper at no cost, and scale effortlessly with pricing plans that grow with your business—perfect for teams of any size.
           </p>
           </div>
       </div>
