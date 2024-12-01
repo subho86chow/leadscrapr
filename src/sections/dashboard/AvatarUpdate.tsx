@@ -2,23 +2,16 @@
 
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
 
 interface ProfileComponentsProps {
   onAvatarChange?: (file: File) => void
-  onNameChange?: (name: string) => void
   initialName?: string
 }
 
 export default function AvatarUodate({ 
   onAvatarChange, 
-  onNameChange,
-  initialName = ""
 }: ProfileComponentsProps = {}) {
-  const [avatarFile, setAvatarFile] = useState<File | null>(null)
   const [avatarPreview, setAvatarPreview] = useState<string>("")
   
   const handleAvatarClick = () => {
@@ -28,7 +21,7 @@ export default function AvatarUodate({
     input.onchange = (e) => {
       const file = (e.target as HTMLInputElement).files?.[0]
       if (file) {
-        setAvatarFile(file)
+
         const reader = new FileReader()
         reader.onload = (e) => {
           setAvatarPreview(e.target?.result as string)

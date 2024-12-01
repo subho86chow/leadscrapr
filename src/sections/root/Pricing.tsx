@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card";
-import ArrorIcon from "@/assets/arrow-right.svg";
 import { FaCheck } from "react-icons/fa";
 import { twMerge } from "tailwind-merge";
 import {motion} from "framer-motion";
@@ -10,6 +9,7 @@ import {motion} from "framer-motion";
 
 const pricingTiers = [
   {
+    id:1,
     title: "Free",
     monthlyPrice: 0,
     buttonText: "Try for free",
@@ -23,6 +23,7 @@ const pricingTiers = [
     ],
   },
   {
+    id:2,
     title: "Pro",
     monthlyPrice: 9,
     buttonText: "Sign Up Now",
@@ -55,9 +56,9 @@ export const Pricing = () => {
       </div>
       <div className="p-5 sm:p-5 md:py-10 md:px-28">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-center mx-10 sm:mx-10 md:mx-6 lg:mx-60">
-          {pricingTiers.map(({title,monthlyPrice,buttonText,features,inverse}:{title:string,monthlyPrice:number,buttonText:string,features:any[],inverse:boolean})=> (
+          {pricingTiers.map(({id,title,monthlyPrice,buttonText,features,inverse}:{id:number,title:string,monthlyPrice:number,buttonText:string,features:string[],inverse:boolean})=> (
 
-            <Card className={twMerge(" bg-white rounded-3xl shadow-[0_7px_14px_#EAEAEA]",inverse === true && 'bg-black text-white')}>
+            <Card key={id} className={twMerge(" bg-white rounded-3xl shadow-[0_7px_14px_#EAEAEA]",inverse === true && 'bg-black text-white')}>
 
               <CardHeader className="text-center text-2xl sm:text-2xl md:text-3xl font-bold">
 
@@ -88,7 +89,7 @@ export const Pricing = () => {
 
               <div className="px-1 sm:px-1 ms:px-2 lg:px-3 mb-10">
                 {features.map((featutre)=>(
-                    <CardContent className="flex gap-2 items-center ml-10 p-1">
+                    <CardContent key={Math.random()} className="flex gap-2 items-center ml-10 p-1">
                       <FaCheck />
                       <p className="text-sm sm:text-sm md:text-base">{featutre}</p>
                     </CardContent>

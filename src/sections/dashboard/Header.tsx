@@ -13,7 +13,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
@@ -21,11 +20,6 @@ import { GiTwoCoins } from "react-icons/gi";
 import { ReviewForm } from "./ReviewForm";
 import { ThemeToggleSwitch } from "./ThemeToogleSwitch";
 
-const NavItem = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <Link href={href} className="text-sm text-gray-700 hover:text-black">
-    {children}
-  </Link>
-)
 
 const RandomGradientAvatar = () => {
   const [gradientStyle, setGradientStyle] = useState({});

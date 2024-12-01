@@ -43,8 +43,6 @@ export default function EmailForm() {
     };
     setIsButtonDisabled(!isValidEmail(newEmail));
   }, [newEmail]);
-
-  console.log
   const isValidEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);

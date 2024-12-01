@@ -27,15 +27,12 @@ export const Navbar = () => {
     };
   }, []);
 
-  const [activeSection, setActiveSection] = useState('home');
   const scrollTo = useSmoothScroll();
   const pathname = usePathname();
 
   useEffect(() => {
     if (pathname === '/') {
       const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        const offset = 70;
         // You can use `scrollPosition` and `offset` as needed
       };
 

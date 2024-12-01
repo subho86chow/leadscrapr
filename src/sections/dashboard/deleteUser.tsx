@@ -1,6 +1,4 @@
 "use client"
-
-import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -16,12 +14,6 @@ import {
     AlertDialogTrigger,
   } from "@/components/ui/alert-dialog"
   
-
-interface ProfileComponentsProps {
-  onNameChange?: (name: string) => void
-  initialName?: string
-}
-
 export default function DeleteUser(){ 
 
   return (
