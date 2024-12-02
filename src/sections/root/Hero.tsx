@@ -36,7 +36,12 @@ export const Hero = () => {
           </div>
         </div>
         <div className="overflow-visible">
-          <motion.img src={dashboardImage.src} alt="cog image" className="rounded-lg shadow-lg -translate-y-[-100px] sm:-translate-y-[-100px] md:-translate-y-[-50px]" style={{translateY,}}/>
+        <motion.img 
+          src={dashboardImage.src} 
+          alt="cog image" 
+          className="rounded-lg shadow-lg -translate-y-[-100px] sm:-translate-y-[-100px] md:-translate-y-[-50px]" 
+          style={{ translateY, willChange: 'transform, opacity' }}
+        />
         </div>
       </div>
     </section>
